@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Антон Кутро](https://up.htmlacademy.ru/htmlcss/37/user/1849265).
-* Наставник: `Дмитрий Осадченко`(https://htmlacademy.ru/profile/dimaos).
+* Наставник: [Дмитрий Осадченко](https://htmlacademy.ru/profile/dimaos).
 
 ---
 
