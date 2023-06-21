@@ -1,0 +1,139 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  background-color: #F2F2F2;
+  color: #333333;
+}
+
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Шапка */
+.page-header {
+  background-color: #FFFFFF;
+  color: #333333;
+}
+
+.navigation-link {
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+/* Общие параметры кнопки */
+.button {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #756157;
+  text-transform: uppercase;
+}
+
+/* HERO */
+.hero-index {
+  min-height: 485px;
+  background-image:
+    url("../images/hero-collar.svg"),
+    url("../images/hero-index-background.jpg");
+  background-repeat:
+    no-repeat,
+    no-repeat;
+  background-position:
+    center bottom,
+    center;
+  background-size:
+    100% auto,
+    cover;
+}
+
+.hero-logo {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Преимущества */
+.advantages-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.advantages-desc {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+/* .advantages-item {
+
+} */
+
+.advantages-item-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.advantages-item-title-light {
+  color: #FFFFFF;
+}
+
+.advantages-item-desc {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #333333;
+}
+
+.advantages-item-desc-light {
+  color: #FFFFFF;
+}
+
+.advantages-list {
+  text-align: center;
+  background-color: #83B3D31F;
+}
+
+.advantages-list li:nth-of-type(odd) {
+background-color: #83B3D333;
+}
+
+.advantages-list li.advantages-item-dark {
+background-color: #82B3D3;
+}
