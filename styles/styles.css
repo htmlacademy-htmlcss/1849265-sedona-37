@@ -19,6 +19,7 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
+  font-weight: 400;
   background-color: #F2F2F2;
   color: #333333;
 }
@@ -72,6 +73,7 @@ body {
   background-size:
     100% auto,
     cover;
+    background-color: #796e9b;
 }
 
 .hero-logo {
@@ -80,31 +82,34 @@ body {
 }
 
 /* Преимущества */
+.advantages {
+  text-align: center;
+}
+
 .advantages-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
-  text-align: center;
   text-transform: uppercase;
   color: #000000;
 }
 
-.advantages-desc {
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 26px;
-  text-align: center;
+.advantages-item {
+background-color: #83B3D31F;
 }
 
-/* .advantages-item {
+.advantages-item-dark {
+  background-color: #82B3D3;
+}
 
-} */
+.advantages-item-grey {
+  background-color: #83B3D333;
+}
 
 .advantages-item-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  text-align: center;
   text-transform: uppercase;
   color: #000000;
 }
@@ -117,7 +122,6 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  text-align: center;
   color: #333333;
 }
 
@@ -125,7 +129,7 @@ body {
   color: #FFFFFF;
 }
 
-.advantages-list {
+/* .advantages-list li {
   text-align: center;
   background-color: #83B3D31F;
 }
@@ -136,4 +140,102 @@ background-color: #83B3D333;
 
 .advantages-list li.advantages-item-dark {
 background-color: #82B3D3;
+} */
+
+
+/* Особенности */
+.features {
+  text-align: center;
+}
+
+.features-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.features-item-grey {
+  background-color: #83B3D31F;
+}
+
+.features-item-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.features-item-desc {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+/* Заинтересовались? */
+.search-hotels {
+  text-align: center;
+}
+
+.search-hotels-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.button-big {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* Подписка */
+.subscription {
+  min-height: 415px; /*Потом нужно будет убрать, размеры добъёмся контентом*/
+  text-align: center;
+  background-image: url("../images/subscribe-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #3b6476;
+}
+
+.subscription-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.subscription-desc {
+  color: #FFFFFF;
+}
+
+.subscription-button {
+  font-size: 20px;
+  font-family: PT Sans;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  background-color: #82B3D3;
+  color: #FFFFFF;
+}
+
+/*Подвал*/
+.social-icon {
+  text-decoration: none;
+}
+
+.footer-phone {
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
 }
