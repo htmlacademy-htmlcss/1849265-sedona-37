@@ -24,6 +24,58 @@ body {
   color: #333333;
 }
 
+/* Общие параметры кнопки */
+.button {
+  font-family: "PT Sans";
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border-radius: 4px;
+  border: none;
+  background: #756157;
+}
+
+.navigation-link.button {
+  color: #FFFFFF;
+}
+
+.button-light {
+  background-color: #82B3D3;
+}
+
+.button-in-favorites {
+  background-color: #7DB54F;
+}
+
+.button-gray {
+  background-color: #F2F2F2;
+}
+
+/* Кнопка в секции Заинтересовались? */
+.button-big {
+  font-family: "PT Sans";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* Кнопка в секции Подписка */
+.subscription-button {
+  font-size: 20px;
+  font-family: "PT Sans";
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  background-color: #82B3D3;
+  color: #FFFFFF;
+  border: none;
+}
+
 .page-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -46,16 +98,6 @@ body {
   text-align: center;
   text-decoration: none;
   text-transform: capitalize;
-}
-
-/* Общие параметры кнопки */
-.button {
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  color: #FFFFFF;
-  background: #756157;
-  text-transform: uppercase;
 }
 
 /* HERO */
@@ -186,14 +228,6 @@ background-color: #82B3D3;
   color: #000000;
 }
 
-.button-big {
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 36px;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
 /* Подписка */
 .subscription {
   min-height: 415px; /*Потом нужно будет убрать, размеры добъёмся контентом*/
@@ -203,6 +237,7 @@ background-color: #82B3D3;
   background-position: center;
   background-size: cover;
   background-color: #3b6476;
+  color: #FFFFFF;
 }
 
 .subscription-title {
@@ -210,32 +245,133 @@ background-color: #82B3D3;
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
-  color: #FFFFFF;
-}
-
-.subscription-desc {
-  color: #FFFFFF;
-}
-
-.subscription-button {
-  font-size: 20px;
-  font-family: PT Sans;
-  font-weight: 700;
-  line-height: 36px;
-  text-transform: uppercase;
-  background-color: #82B3D3;
-  color: #FFFFFF;
 }
 
 /*Подвал*/
-.social-icon {
-  text-decoration: none;
-}
-
 .footer-phone {
   font-size: 40px;
   line-height: 40px;
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
+}
+
+
+/* catalog */
+
+/* Обёртка фильтра */
+.main-inner-wrap {
+  min-height: 412px;
+  background-image: url("../images/catalog/catalog-filter-hotels-background.jpg");
+  background-repeat: no-repeat;
+  background-color: #3b6476;
+  color: #FFFFFF;
+}
+
+/*Шапка фильтра поиска гостиниц*/
+.main-inner-title {
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+/* Хлебные крошки */
+.breadcrumbs-list {
+  color: #FFFFFF;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 21px;
+  color: inherit;
+}
+/* Переключатели фильтра */
+.catalog-filter-title {
+  font-size: 20px;
+  font-family: "PT Sans";
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.control {
+  font-size: 18px;
+  line-height: 23px
+}
+
+/* Карточки гостиниц */
+.sorting-products-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.select-control {
+  font-size: 18px;
+  font-family: "PT Sans";
+  line-height: 21px;
+  color: #333333;
+}
+
+.hotel-card-link {
+  text-decoration: none;
+}
+
+.hotel-card-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #000000;
+}
+
+.hotel-card-type {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.hotel-card-price {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: right;
+  text-decoration: none;
+}
+
+.rating {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  background-color: #F2F2F2;
+}
+
+.pagination-list {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.pagination-link {
+  background-color: #82B3D3;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.pagination-link-current {
+  background-color: #F2F2F2;
+  color: #000000;
+}
+
+.subscription-catalog {
+  background-image: none;
+  background-color: #FFFFFF;
+}
+
+.subscription-title-catalog {
+  color: #000000;
+}
+
+.subscription-descr-catalog {
+  color: #333333;
 }
