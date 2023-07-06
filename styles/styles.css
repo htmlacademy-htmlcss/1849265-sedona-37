@@ -14,10 +14,6 @@
   font-display: swap;
 }
 
-
-/* Используется универсальный селектор одновременно с псевдоэлементами для изменения боксовой модели. */
-
-
 html {
   height: 100%;
 }
@@ -167,6 +163,11 @@ body {
 
 /* Преимущества */
 .advantages-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
   text-align: center;
 }
 
@@ -182,14 +183,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-
-.advantages-title {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  text-transform: uppercase;
-  color: #000000;
 }
 
 .advantages-item {
@@ -210,6 +203,12 @@ body {
 
 .advantages-item-grey {
   background-color: #83B3D333;
+}
+
+.advantages-image {
+  width: 800px;
+  height: 100%;
+  object-fit: cover;
 }
 
 .advantages-item-title {
@@ -260,6 +259,22 @@ background-color: #82B3D3;
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
+}
+
+.features-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  /* text-align: center; */
+  list-style: none;
+}
+
+.features-item {
+  width: 400px;
+  min-height: 385px;
+  padding: 80px 85px;
+  box-sizing: border-box;
 }
 
 .features-item-grey {
