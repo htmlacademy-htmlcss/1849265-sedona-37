@@ -16,11 +16,7 @@
 
 
 /* Используется универсальный селектор одновременно с псевдоэлементами для изменения боксовой модели. */
-/* *,
-*::before,
-*::after {
-  box-sizing: border-box;
-} */
+
 
 html {
   height: 100%;
@@ -170,8 +166,22 @@ body {
 }
 
 /* Преимущества */
-.advantages {
+.advantages-title {
   text-align: center;
+}
+
+.advantages-desc {
+  text-align: center;
+}
+
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .advantages-title {
@@ -183,11 +193,19 @@ body {
 }
 
 .advantages-item {
-background-color: #83B3D31F;
+  background-color: #83B3D31F;
 }
 
 .advantages-item-dark {
+  display: flex;
   background-color: #82B3D3;
+}
+
+.advantages-item-wrapper {
+  box-sizing: border-box;
+  width: 400px;
+  min-height: 385px;
+  padding: 103px 85px;
 }
 
 .advantages-item-grey {
