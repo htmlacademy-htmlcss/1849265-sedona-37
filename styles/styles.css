@@ -14,13 +14,21 @@
   font-display: swap;
 }
 
+
+/* Используется универсальный селектор одновременно с псевдоэлементами для изменения боксовой модели. */
+/* *,
+*::before,
+*::after {
+  box-sizing: border-box;
+} */
+
 html {
   height: 100%;
 }
 
 body {
-  height: 100%;
   margin: 0;
+  height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
@@ -93,8 +101,33 @@ body {
 
 /* Шапка */
 .page-header {
+  display: flex;
+  padding: 0 70px;
+  justify-content: space-between;
   background-color: #FFFFFF;
   color: #333333;
+}
+
+.header-logo {
+  margin-right: 28px;
+}
+
+.navigation {
+  width: 890px;
+  display: flex;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  width: 570px;
+  display: flex;
+  list-style: none;
+}
+
+.navigation-user {
+  max-width: 268px;
+  margin-left: auto;
 }
 
 .navigation-link {
@@ -329,6 +362,7 @@ background-color: #82B3D3;
 }
 
 .hotel-card-link {
+  /* display: block; */
   text-decoration: none;
 }
 
