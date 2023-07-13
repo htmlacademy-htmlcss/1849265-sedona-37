@@ -333,10 +333,8 @@
           <!-- Пагинация -->
           <div class="pagination">
             <ul class="pagination-list">
-              <li class="pagination-item">
-                <a class="button-gray pagination-link pagination-link-current"
-                  >1</a
-                >
+              <li class="pagination-item pagination-item-current">
+                <a class="pagination-link pagination-link-current button-gray">1</a>
               </li>
               <li class="pagination-item">
                 <a class="pagination-link" href="#">2</a>
@@ -347,9 +345,13 @@
               <li class="pagination-item">
                 <a class="pagination-link" href="#">4</a>
               </li>
+              <li class="pagination-item pagination-item-separator">
+                <span class="pagination-separator">...</span>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link pagination-last-page" href="#">10</a>
+              </li>
             </ul>
-            <span class="pagination-separator">...</span>
-            <a class="pagination-link pagination-last-page" href="#">10</a>
           </div>
         </section>
         <!-- Подписка -->
