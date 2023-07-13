@@ -213,7 +213,7 @@
             </ul>
           </div>
           <div class="hotel-cards-wrapper">
-            <ul class="hotel-cards-list">
+            <ul class="hotel-card-list">
               <li class="hotel-card">
                 <a class="hotel-card-link" href="#">
                   <img
@@ -243,10 +243,6 @@
                 </div>
                 <p class="rating">Рейтинг: 8,5</p>
               </li>
-            </ul>
-          </div>
-          <div class="hotel-cards-wrapper">
-            <ul class="hotel-cards-list">
               <li class="hotel-card">
                 <a class="hotel-card-link" href="#">
                   <img
@@ -276,10 +272,6 @@
                 </div>
                 <p class="rating">Рейтинг: 9,2</p>
               </li>
-            </ul>
-          </div>
-          <div class="hotel-cards-wrapper">
-            <ul class="hotel-cards-list">
               <li class="hotel-card">
                 <a class="hotel-card-link" href="#">
                   <img
@@ -308,10 +300,6 @@
                 </div>
                 <p class="rating">Рейтинг: 6,9</p>
               </li>
-            </ul>
-          </div>
-          <div class="hotel-cards-wrapper">
-            <ul class="hotel-cards-list">
               <li class="hotel-card">
                 <a class="hotel-card-link" href="#">
                   <img
@@ -341,13 +329,12 @@
               </li>
             </ul>
           </div>
+
           <!-- Пагинация -->
           <div class="pagination">
             <ul class="pagination-list">
-              <li class="pagination-item">
-                <a class="button-gray pagination-link pagination-link-current"
-                  >1</a
-                >
+              <li class="pagination-item pagination-item-current">
+                <a class="pagination-link pagination-link-current button-gray">1</a>
               </li>
               <li class="pagination-item">
                 <a class="pagination-link" href="#">2</a>
@@ -358,18 +345,20 @@
               <li class="pagination-item">
                 <a class="pagination-link" href="#">4</a>
               </li>
+              <li class="pagination-item pagination-item-separator">
+                <span class="pagination-separator">...</span>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link pagination-last-page" href="#">10</a>
+              </li>
             </ul>
-            <span class="pagination-separator">...</span>
-            <a
-              class="pagination-link pagination-last-page"
-              href="#"
-              >10</a
-            >
           </div>
         </section>
         <!-- Подписка -->
-        <section class="subscription subscription-catalog">
-          <h2 class="subscription-title subscription-title-catalog">Подпишитесь на&nbsp;рассылку</h2>
+        <article class="subscription subscription-catalog">
+          <h2 class="subscription-title subscription-title-catalog">
+            Подпишитесь на&nbsp;рассылку
+          </h2>
           <p class="subscription-descr subscription-descr-catalog">
             Только полезная информация и&nbsp;никакого спама, честное
             бойскаутское!
@@ -393,48 +382,50 @@
               ПОДПИСАТЬСЯ
             </button>
           </form>
-        </section>
+        </article>
       </main>
       <!-- Подвал -->
       <footer class="page-footer">
-        <ul class="social-list">
-          <li class="social-item">
-            <a
-              class="social-icons"
-              href="https://vk.com/htmlacademy"
-              target="_blank"
-            >
-              <span class="visually-hidden">Вконтакте.</span>
-            </a>
-          </li>
-          <li class="social-item">
-            <a
-              class="social-icons"
-              href="https://t.me/htmlacademy"
-              target="_blank"
-            >
-              <span class="visually-hidden">Телеграм.</span>
-            </a>
-          </li>
-          <li class="social-item">
-            <a
-              class="social-icons"
-              href="https://www.youtube.com/user/htmlacademyru"
-              target="_blank"
-            >
-              <span class="visually-hidden">Ютуб.</span>
-            </a>
-          </li>
-        </ul>
-        <a href="tel:+78128121212">+7 (812) 812-12-12</a>
-        <a href="https://htmlacademy.ru/" target="_blank">
-          <img
-            src="images/logo/logo-footer-htmlacademy.svg"
-            width="115"
-            height="33"
-            alt="Логотип HTMLacademy."
-          />
-        </a>
+        <div class="page-footer-container">
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a
+                class="footer-social-icon"
+                href="https://vk.com/htmlacademy"
+                target="_blank"
+              >
+                <span class="visually-hidden">Вконтакте.</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a
+                class="footer-social-icon"
+                href="https://t.me/htmlacademy"
+                target="_blank"
+              >
+                <span class="visually-hidden">Телеграм.</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a
+                class="footer-social-icon"
+                href="https://www.youtube.com/user/htmlacademyru"
+                target="_blank"
+              >
+                <span class="visually-hidden">Ютуб.</span>
+              </a>
+            </li>
+          </ul>
+          <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          <a class="footer-logo" href="https://htmlacademy.ru/" target="_blank">
+            <img
+              src="images/logo/logo-footer-htmlacademy.svg"
+              width="115"
+              height="33"
+              alt="Логотип HTMLacademy."
+            />
+          </a>
+        </div>
       </footer>
     </div>
   </body>
