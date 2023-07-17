@@ -14,8 +14,13 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
+  height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
@@ -77,7 +82,10 @@ body {
 }
 
 .page-container {
+  min-height: 100%;
   max-width: 1200px;
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
   background-color: #FFFFFF;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
@@ -85,8 +93,33 @@ body {
 
 /* Шапка */
 .page-header {
+  display: flex;
+  padding: 0 70px;
+  justify-content: space-between;
   background-color: #FFFFFF;
   color: #333333;
+}
+
+.header-logo {
+  margin-right: 28px;
+}
+
+.navigation {
+  width: 890px;
+  display: flex;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  width: 570px;
+  display: flex;
+  list-style: none;
+}
+
+.navigation-user {
+  max-width: 268px;
+  margin-left: auto;
 }
 
 .navigation-link {
@@ -98,6 +131,11 @@ body {
   text-align: center;
   text-decoration: none;
   text-transform: capitalize;
+}
+
+/* main */
+.main-index {
+  flex-grow: 1;
 }
 
 /* HERO */
@@ -124,28 +162,53 @@ body {
 }
 
 /* Преимущества */
-.advantages {
-  text-align: center;
-}
-
 .advantages-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
+  text-align: center;
+}
+
+.advantages-desc {
+  text-align: center;
+}
+
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .advantages-item {
-background-color: #83B3D31F;
+  background-color: #83B3D31F;
 }
 
 .advantages-item-dark {
+  display: flex;
   background-color: #82B3D3;
+}
+
+.advantages-item-wrapper {
+  box-sizing: border-box;
+  width: 400px;
+  min-height: 385px;
+  padding: 103px 85px;
 }
 
 .advantages-item-grey {
   background-color: #83B3D333;
+}
+
+.advantages-image {
+  width: 800px;
+  height: 100%;
+  object-fit: cover;
 }
 
 .advantages-item-title {
@@ -198,6 +261,22 @@ background-color: #82B3D3;
   color: #000000;
 }
 
+.features-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  /* text-align: center; */
+  list-style: none;
+}
+
+.features-item {
+  width: 400px;
+  min-height: 385px;
+  padding: 80px 85px;
+  box-sizing: border-box;
+}
+
 .features-item-grey {
   background-color: #83B3D31F;
 }
@@ -248,13 +327,39 @@ background-color: #82B3D3;
 }
 
 /*Подвал*/
+.page-footer {
+  background: #FFFFFF;
+}
+
+.page-footer-container {
+  display: flex;
+  justify-content: space-between;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.footer-social-list {
+  display: flex;
+  width: 142px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 .footer-phone {
+  width: 331px;
   font-size: 40px;
   line-height: 40px;
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
 }
+
+.footer-logo {
+  width: 115px;
+}
+
+
 
 
 /* catalog */
@@ -315,7 +420,30 @@ background-color: #82B3D3;
   color: #333333;
 }
 
+/* Карточки гостиниц */
+
+.hotel-cards-wrapper {
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.hotel-card-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.hotel-card {
+  width: 300px;
+  height: 398px;
+  padding: 20px;
+}
+
 .hotel-card-link {
+  /* display: block; */
   text-decoration: none;
 }
 
@@ -346,20 +474,51 @@ background-color: #82B3D3;
   background-color: #F2F2F2;
 }
 
+/* Пагинация */
+.pagination {
+  width: 1060px;
+  margin: 0 auto;
+}
+
 .pagination-list {
+  margin: 0;
+  padding: 0;
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
+  list-style: none;
+  display: flex;
+  gap: 0 8px;
+}
+
+.pagination-item {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  background-color: #82B3D3;
+}
+
+.pagination-item-current {
+  background-color: #F2F2F2;
+  /* color: #000000; */
+}
+
+.pagination-item-separator {
+  background-color: #FFFFFF;
+}
+
+.pagination-separator {
+  color: #000000;
 }
 
 .pagination-link {
-  background-color: #82B3D3;
+  margin: 0;
+  padding: 0;
   color: #FFFFFF;
   text-decoration: none;
 }
 
 .pagination-link-current {
-  background-color: #F2F2F2;
   color: #000000;
 }
 
