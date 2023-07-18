@@ -31,7 +31,7 @@ body {
 
 /* Общие параметры кнопки */
 .button {
-  font-family: "PT Sans";
+  font-family: "PT Sans" sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -61,7 +61,7 @@ body {
 
 /* Кнопка в секции Заинтересовались? */
 .button-big {
-  font-family: "PT Sans";
+  font-family: "PT Sans" sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
@@ -72,7 +72,7 @@ body {
 /* Кнопка в секции Подписка */
 .subscription-button {
   font-size: 20px;
-  font-family: "PT Sans";
+  font-family: "PT Sans" sans-serif;
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
@@ -394,7 +394,7 @@ background-color: #82B3D3;
 /* Переключатели фильтра */
 .catalog-filter-title {
   font-size: 20px;
-  font-family: "PT Sans";
+  font-family: "PT Sans" sans-serif;
   font-weight: 700;
   line-height: 24px;
   text-transform: capitalize;
@@ -415,7 +415,7 @@ background-color: #82B3D3;
 
 .select-control {
   font-size: 18px;
-  font-family: "PT Sans";
+  font-family: "PT Sans" sans-serif;
   line-height: 21px;
   color: #333333;
 }
